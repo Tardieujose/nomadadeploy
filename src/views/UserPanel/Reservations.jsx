@@ -258,7 +258,7 @@ const Reservation = ({ userId }) => {
 
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                       <Button
-                        disabled={!reviewButtonEnabled || reservation.endDate > fechaActual}
+                        disabled={!reviewButtonEnabled || reservation.endDate > fechaActualizada}
                         className={ResStyles.buttonStyle}
                         onClick={() => handleButtonClick(reservationId)}
                       >
